@@ -6,6 +6,7 @@ import AboutUs from './pages/aboutUs';
 import Navbar from './components/navbar';
 import GetInvolved from './pages/getInvolved';
 import LearnMore from './pages/learnMore';
+import Donate from './pages/donate';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path ="/events" element={< GetInvolved />} />
                 <Route path ="/contact" element={< ContactForm />} />
                 <Route path ="/learn-more" element={< LearnMore />} />
+                <Route path ="/donate" element={< Donate />} />
 
             </Routes>
         </Router>
