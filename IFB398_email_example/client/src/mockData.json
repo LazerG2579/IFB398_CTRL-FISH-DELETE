@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "image": "/images/mockdatapic1.jpg",
+      "title": "Tree Planting",
+      "date": "2023-09-10",
+      "time": "09:00 AM",
+      "location": "Central Park, New York"
+    },
+    {
+      "id": 2,
+      "image": "path/to/image2.jpg",
+      "title": "Beach Cleanup",
+      "date": "2023-09-15",
+      "time": "10:00 AM",
+      "location": "Santa Monica Beach, Los Angeles"
+    },
+    {
+      "id": 3,
+      "image": "path/to/image3.jpg",
+      "title": "Recycling Workshop",
+      "date": "2023-09-18",
+      "time": "02:00 PM",
+      "location": "Community Center, Seattle"
+    }
+  ]
+  

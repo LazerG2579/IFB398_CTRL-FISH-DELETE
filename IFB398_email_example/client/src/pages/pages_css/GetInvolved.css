@@ -1,0 +1,64 @@
+
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('../../images/event-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+    margin-left: 170px;
+    font-size: 24pt;
+}
+
+.floating-text {
+    width: 700px;
+    height: 300px;
+    font-size: 43px; /* This font size is an estimate, adjust as needed */
+    text-align: left;
+    color: #464646;
+}
+
+.box {
+    width: 450px;
+    height: 300px;
+    margin-right: 170px;
+    background-color: #0f5257;
+    
+}
+
+.box-item {
+    display: block;
+    padding-left: 40px;
+    padding-top: 20px;
+    text-decoration: none; /* Removes the underline */
+    color: white; /* Inherits the color from the parent */
+}
+
+.browse {
+    margin-left: 195px;
+    font-size: 38pt;
+    color: #0f5257
+}
+
+.margin {
+    position: relative;
+    margin: 20px 0;
+    margin-left: 195px;
+    margin-right: 195px;
+}
+
+.margin::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid black;
+
+}
