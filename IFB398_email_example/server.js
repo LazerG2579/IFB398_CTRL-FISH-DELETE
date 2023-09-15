@@ -12,8 +12,8 @@ app.use("/", router);
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: "envirofish email will go here",
-        pass: "apps password will be need here",
+        user: "envirofish email goes here",
+        pass: "apps password goes here",
     },
 });
 contactEmail.verify((error) => {
@@ -25,13 +25,37 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-    const name = req.body.name;
+    const name = req.body.firstName + " " + req.body.lastName;
     const email = req.body.email;
     const message = req.body.message;
+    const selectedOption = req.body.selectedOption;
+
+    let toEmail = "";
+    let subject = "";
+
+    // Determine the appropriate email address based on the selected option
+    switch (selectedOption) {
+        case "individual":
+            //toEmail = "envirofishinc@gmail.com";
+            subject = "Individual with an enquiry";
+            break;
+        case "business":
+            //toEmail = "envirofishinc@gmail.com";
+            subject = "business/organization enquiry";
+            break;
+        case "volunteer":
+            toEmail = "volunteer email goes here";
+            subject = "volunteering enquiry";
+            break;
+        default:
+            //toEmail = "envirofishinc@gmail.com";
+            break;
+    }
+
     const mail = {
         from: name,
-        to: "Envirofish email will go here",
-        subject: "Contact Form Submission",
+        to: toEmail,
+        subject: subject,
         html: `<p>Name: ${name}</p>
              <p>Email: ${email}</p>
              <p>Message: ${message}</p>`,
