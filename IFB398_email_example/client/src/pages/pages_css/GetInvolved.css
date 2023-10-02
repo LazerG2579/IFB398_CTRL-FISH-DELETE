@@ -1,8 +1,6 @@
-
-
 .banner {
     width: 100%;
-    height: 400px;
+    height: 430px;
     background-image: url('../../images/event-banner.jpg');
     background-size: cover;
     background-position: center;
@@ -19,9 +17,9 @@
 .floating-text {
     width: 700px;
     height: 300px;
-    font-size: 43px; /* This font size is an estimate, adjust as needed */
+    font-size: 43px; 
     text-align: left;
-    color: #464646;
+    color: #464646
 }
 
 .box {
@@ -36,8 +34,8 @@
     display: block;
     padding-left: 40px;
     padding-top: 20px;
-    text-decoration: none; /* Removes the underline */
-    color: white; /* Inherits the color from the parent */
+    text-decoration: none; 
+    color: white;
 }
 
 .browse {
@@ -62,3 +60,104 @@
     border-top: 1px solid black;
 
 }
+
+.margin2 {
+  position: relative;
+
+  margin-left: 195px;
+  margin-right: 195px;
+}
+
+.margin2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid black;
+
+}
+
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px; 
+  margin-right: 100px; 
+}
+
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  width: 100%;
+}
+
+.carousel-item {
+  border: 1px solid gray;
+  
+  box-sizing: border-box;
+  text-align: left;
+  background-color: #0b3142;
+  color: white;
+  margin: 16px; 
+}
+
+.carousel-item:nth-child(odd) {
+  background-color: #0f5257;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  
+}
+
+.carousel-item h2 {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: underline;
+}
+
+.carousel-item p {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14pt;
+}
+
+.page-numbers button {
+  border: none;
+  margin-top: 30px;
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 20pt;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.carousel-item a {
+  color: white;
+}
+

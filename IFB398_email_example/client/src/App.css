@@ -9,7 +9,7 @@
 body {
 
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: white;
   font-family: 'Archivo', sans-serif;
 }
 
@@ -25,8 +25,8 @@ body {
 
 .nav-left, .nav-right {
   display: flex;
-  gap: 25px; /* Increased the space between elements */
-  align-items: center; /* Centers the elements vertically */
+  gap: 25px; 
+  align-items: center; 
 }
 
 .nav-right {
@@ -34,10 +34,11 @@ body {
 }
 
 .nav-link {
-  text-decoration: none; /* Removes the underline */
-  color: inherit; /* Inherits the color from the parent */
-  vertical-align: middle; /* Centers the text vertically */
-  font-size: 1.75em; /* Adjusted font size */
+  text-decoration: none; 
+  color: inherit; 
+  vertical-align: middle; 
+  font-size: 1.75em; 
+  font-weight: bold;
 }
 
 .navbar-logo {
@@ -47,53 +48,26 @@ body {
 
 .nav-button {
   padding: 9px 45px;
-  border-radius: 5px; /* Makes the edges rounded */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  font-size: 1.75em; /* Adjusted font size */
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+  font-size: 1.75em; 
   border-width: 1px;
   color: white;
   background-color: #0f5257;
+  font-weight: bold;
 }
 
 
 .nav-button:hover {
   background-color: #464646;
-  color: white; /* Changing text color to white for better visibility on black background */
+  color: white; 
+  cursor: pointer;
 }
 
 .home {
   background-color: #f0f0f0;
   padding-bottom: 48.5em;
 }
-
-
-.carousel-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.carousel-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Adjust this for space between items */
-  width: 100%;
-}
-
-.carousel-item {
-  border: 1px solid gray;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -124,7 +98,7 @@ body {
 
   .nav-button {
       font-size: 1.5em;
-      width: 100%; /* To make the buttons full width on mobile */
+      width: 100%; 
   }
 
 }

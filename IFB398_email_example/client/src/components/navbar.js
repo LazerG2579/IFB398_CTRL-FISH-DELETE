@@ -1,8 +1,10 @@
 import React from 'react';
-import navbarlogo from '../images/navbarlogo.jpg'
+import navbarlogo from '../images/navbarlogo2.jpg'
 import { Link } from "react-router-dom"
+import { useEffect } from 'react';
 
 function Navbar() {
+
     return (
         <div className="nav">
             
@@ -25,7 +27,7 @@ function Navbar() {
             {/* Right side of the Navbar */}
             <div className="nav-right">
                 <button className="nav-button">Language</button>
-                <Link to="/donate">
+               <Link to="./events#donate">
                 <button className="nav-button">Donate</button>
                 </Link>
             </div>

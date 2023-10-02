@@ -18,8 +18,7 @@ const App = () => {
                 <Route path="/events" element={< GetInvolved />} />
                 <Route path="/contact" element={< ContactForm />} />
                 <Route path="/learn-more" element={< LearnMore />} />
-                <Route path="/donate" element={< Donate />} />
-
+                
             </Routes>
         </Router>
     );
