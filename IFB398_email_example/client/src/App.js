@@ -4,7 +4,7 @@ import ContactForm from './pages/contactUs';
 import Home from './pages/home';
 import AboutUs from './pages/aboutUs';
 import Navbar from './components/navbar';
-import GetInvolved from './pages/getInvolved';
+import Events from './pages/events';
 import LearnMore from './pages/learnMore';
 import { useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
@@ -15,8 +15,12 @@ const App = () => {
         const { pathname, hash } = useLocation();
       
         useEffect(() => {
-          // Only scroll to top if there's no hash fragment
-          if (!hash) {
+          if (hash) {
+            const element = document.getElementById(hash.slice(1));
+            if (element) {
+              element.scrollIntoView();
+            }
+          } else {
             window.scrollTo(0, 0);
           }
         }, [pathname, hash]);
@@ -30,7 +34,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={< Home />} />
                 <Route path="/about" element={< AboutUs />} />
-                <Route path="/events" element={< GetInvolved />} />
+                <Route path="/events" element={< Events />} />
                 <Route path="/contact" element={< ContactForm />} />
                 <Route path="/learn-more" element={< LearnMore />} />
                 

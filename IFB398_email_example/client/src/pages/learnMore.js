@@ -26,13 +26,13 @@ export default function LearnMore() {
           </ul>
         </div>
         <div className="right">
-          <img src={fishPic} alt ="Description of Image 1" />
+          <img src={fishPic} alt ="fish" />
         </div>
       </div>
 
       <div className="row">
         <div className="left">
-          <img src={folwersPic} alt="Description of Image 2" />
+          <img src={folwersPic} alt="flowers" />
         </div>
         <div className="right">
           <p>
@@ -53,7 +53,7 @@ export default function LearnMore() {
           </p>
         </div>
         <div className="right2">
-          <img src= {Lilly} alt="Description of Image 3" />
+          <img src= {Lilly} alt="Lilly and The Tilly" />
         </div>
       </div>
 

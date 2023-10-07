@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './pages_css/GetInvolved.css'
 import { Link } from "react-router-dom"
 import eventsData from '../mockData.json'
-import Volunteer from './volunteer';
-import Donate from './donate';
-import Footer from '../components/footer';
 
 export default function GetInvolved() {
   
@@ -111,19 +108,10 @@ export default function GetInvolved() {
               </div>
          
           </div>
-          <h1 className='browse' id='events'>Browse Our Upcoming Events</h1>
-          <div className='margin'>‎</div>
-          <Carousel events={eventsData} onShowDetails={handleShowDetails}  />
-          
-          <div className='margin2'>‎</div>
-          <div id='volunteer'>
-            {<Volunteer/>}
-          </div>
-          <div id="donate">
-            {<Donate/>}
-          </div>
-            {<Footer/>}
-  
+            <h1 className='browse' id='events'>Browse Our Upcoming Events</h1>
+            <div className='margin'>‎</div>
+            <Carousel events={eventsData} onShowDetails={handleShowDetails}  />
+            <div className='margin2'>‎</div>
       </div>
   )
 }
