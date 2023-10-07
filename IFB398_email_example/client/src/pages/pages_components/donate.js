@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react';
+import "../pages_css/Donate.css"
 export default function Donate() {
   useEffect(() => {
     // Check if there is a hash in the URL
@@ -13,6 +14,6 @@ export default function Donate() {
     }
   }, []);
   return (
-    <div className='donate'style={{ backgroundColor: '#0f5257' }}>Donate</div>
+    <div className='donate'>Donate</div>
   )
 }

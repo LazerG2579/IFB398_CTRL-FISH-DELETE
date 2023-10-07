@@ -1,8 +1,8 @@
 import React from 'react'
-import Volunteer from './volunteer'
-import Donate from './donate'
+import Volunteer from './pages_components/volunteer'
+import Donate from './pages_components/donate'
 import Footer from '../components/footer'
-import GetInvolved from './getInvolved'
+import GetInvolved from './pages_components/getInvolved'
 
 
 export default function Events() {

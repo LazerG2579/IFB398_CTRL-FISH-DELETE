@@ -1,7 +1,7 @@
 import React from 'react'
-import './pages_css/GetInvolved.css'
+import '../pages_css/GetInvolved.css'
 import { Link } from "react-router-dom"
-import eventsData from '../mockData.json'
+import eventsData from '../../mockData.json'
 
 export default function GetInvolved() {
   

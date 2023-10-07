@@ -1,10 +1,10 @@
 import React from 'react';
-import './pages_css/Volunteer.css';
-import volunteerpic from "../images/volunteerpic1.jpg"
-import photo_icon from "../images/photo_icon.jpg"
-import plant_icon from "../images/plant_icon.jpg"
-import data_icon from "../images/data_icon.jpg"
-import smile_icon from "../images/smile_icon.jpg"
+import '../pages_css/Volunteer.css';
+import volunteerpic from "../../images/volunteerpic1.jpg"
+import photo_icon from "../../images/photo_icon.jpg"
+import plant_icon from "../../images/plant_icon.jpg"
+import data_icon from "../../images/data_icon.jpg"
+import smile_icon from "../../images/smile_icon.jpg"
 import { Link } from "react-router-dom"
 
 
