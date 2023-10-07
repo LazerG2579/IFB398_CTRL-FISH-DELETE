@@ -9,8 +9,8 @@ export default function Events() {
   return (
     <div>
         <GetInvolved/>
-        <div id='volunteer'> <Volunteer/> </div>
-        <div id="donate"> <Donate/> </div>
+        <Volunteer/>
+        <Donate/>
         <Footer/>
     </div>
     

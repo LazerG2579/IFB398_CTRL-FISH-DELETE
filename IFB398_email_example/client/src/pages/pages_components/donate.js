@@ -14,6 +14,6 @@ export default function Donate() {
     }
   }, []);
   return (
-    <div className='donate'>Donate</div>
+    <div id='donate' className='donate'>Donate</div>
   )
 }
