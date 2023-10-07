@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import eventsData from '../mockData.json'
 import Volunteer from './volunteer';
 import Donate from './donate';
+import Footer from '../components/footer';
 
 export default function GetInvolved() {
   
@@ -88,10 +89,10 @@ export default function GetInvolved() {
 
   return (
       <div className="get-involved-container">
-          {/*Banner*/}
+          
           <div className="banner"></div>
           <div className="content-section">
-              {/*Floating Text*/}
+              
               <h1 className="floating-text">
                   We always have many events and 
                   oppurtunities available to those 
@@ -100,7 +101,7 @@ export default function GetInvolved() {
                   regardless of ability, socio-economic 
                   status or background.
               </h1>
-              {/*Floating Box*/}
+              
               <div className="box">
                 <a className="box-item" href="#donate"> Donate </a>
                 <a className="box-item" href='#events'>Browse Events</a>
@@ -108,7 +109,7 @@ export default function GetInvolved() {
                 <Link className="box-item" to={"/learn-more"}> Learn More </Link>
                 <Link className="box-item" to={"/contact"}> Contact Us </Link>
               </div>
-          {/*Events*/}
+         
           </div>
           <h1 className='browse' id='events'>Browse Our Upcoming Events</h1>
           <div className='margin'>‎</div>
@@ -118,9 +119,11 @@ export default function GetInvolved() {
           <div id='volunteer'>
             {<Volunteer/>}
           </div>
-          <div id='donate'>
+          <div id="donate">
             {<Donate/>}
           </div>
+            {<Footer/>}
+  
       </div>
   )
 }
